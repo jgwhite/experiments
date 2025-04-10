@@ -1,7 +1,6 @@
 {
   "name": "experiments",
   "version": "1.0.0",
-  "main": "index.js",
   "author": "Jamie White <jamie@jgwhite.co.uk>",
   "license": "MIT",
   "scripts": {
