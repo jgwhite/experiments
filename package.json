@@ -3,15 +3,28 @@
   "version": "1.0.0",
   "author": "Jamie White <jamie@jgwhite.co.uk>",
   "license": "MIT",
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "typecheck": "tsc",
+    "lint": "eslint . --ext .ts,.js",
+    "lint:fix": "eslint . --ext .ts,.js --fix",
+    "format": "prettier --write \"**/*.{ts,js,json,html,css}\""
   },
   "engines": {
     "node": "22.14.x"
   },
   "devDependencies": {
+    "@eslint/js": "^9.24.0",
+    "@typescript-eslint/eslint-plugin": "^8.29.1",
+    "@typescript-eslint/parser": "^8.29.1",
+    "eslint": "^9.24.0",
+    "eslint-config-prettier": "^10.1.2",
+    "eslint-plugin-prettier": "^5.2.6",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.3",
     "vite": "^6.2.6"
   }
 }
